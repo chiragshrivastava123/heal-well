@@ -62,7 +62,7 @@ export default function Services() {
           <ServiceCard
             title="Initial Consultation"
             duration="60 – 90 min"
-            image="/initial_Consultation.png"
+            image="/Initial_Consultation.png"
             description="A comprehensive session to understand your health, lifestyle, and concerns, forming a treatment plan tailored to you."
             points={[
               "In-depth health assessment",
