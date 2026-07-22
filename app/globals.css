@@ -1,26 +1,43 @@
 @import "tailwindcss";
 
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --green-primary: #2F4F3E;
+  --green-dark: #1f3a32;
+  --accent-gold: #e4c45d;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+
+/* Brand navbar background */
+.nav-bg {
+  background:
+    linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.08) 0%,
+      rgba(0, 0, 0, 0.12) 100%
+    ),
+    radial-gradient(
+      120% 100% at 50% 0%,
+      rgba(255, 255, 255, 0.12) 0%,
+      rgba(0, 0, 0, 0.2) 60%
+    ),
+    #2f4f3e;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+
+.input {
+  @apply w-full px-4 py-3 rounded-lg
+         border border-gray-300
+         bg-white
+         text-gray-800
+         placeholder-gray-400
+         focus:outline-none
+         focus:border-[#8FAF9A]
+         focus:ring-2 focus:ring-[#8FAF9A]
+         transition;
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+
+.contactCard {
+  @apply block bg-white rounded-lg shadow-sm p-4 hover:shadow-md transition;
 }
