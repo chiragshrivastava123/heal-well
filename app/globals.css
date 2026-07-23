@@ -1,12 +1,26 @@
 @import "tailwindcss";
 
-
 :root {
   --green-primary: #2F4F3E;
   --green-dark: #1f3a32;
   --accent-gold: #e4c45d;
 }
 
+/* Base resets to eliminate horizontal scrolling & side white space on mobile */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+img, svg, video {
+  max-width: 100%;
+  height: auto;
+}
 
 /* Brand navbar background */
 .nav-bg {
@@ -24,7 +38,6 @@
     #2f4f3e;
 }
 
-
 .input {
   @apply w-full px-4 py-3 rounded-lg
          border border-gray-300
@@ -36,7 +49,6 @@
          focus:ring-2 focus:ring-[#8FAF9A]
          transition;
 }
-
 
 .contactCard {
   @apply block bg-white rounded-lg shadow-sm p-4 hover:shadow-md transition;
