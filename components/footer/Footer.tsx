@@ -31,7 +31,7 @@ export default function Footer() {
 
           {/* Services */}
           <div>
-            
+
             <ul className="space-y-1.5 text-md text-[#c8dcc8]">
               <li>
                 <Link href="/home">Home</Link>
@@ -57,10 +57,10 @@ export default function Footer() {
             <h4 className="mb-3 font-semibold text-white">Contact</h4>
             <ul className="space-y-1.5 text-sm text-[#c8dcc8]">
               <li>+61 493 106 437</li>
-          
+
               <li className="break-all leading-relaxed">
-  healwellnaturaltherapies@gmail.com
-</li>
+                healwellnaturaltherapies@gmail.com
+              </li>
               <li>Australia</li>
             </ul>
 

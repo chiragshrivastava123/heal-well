@@ -22,7 +22,7 @@ export default function Services() {
         {/* Overlay for readability */}
         <div className="absolute inset-0 bg-white/60" />
 
-        <div className="relative z-10 min-h-[85vh] md:min-h-[90vh] flex flex-col justify-center items-center text-center px-6">
+        <div className="relative z-10 min-h-[85vh] md:min-h-[90vh] flex flex-col justify-center items-center text-center px-6 pt-28 sm:pt-32 lg:pt-28 pb-12">
           <h1 className="font-playfair text-[38px] md:text-[48px] lg:text-[52px] text-[#1F4D3A] leading-tight">
             Holistic Care for a <br className="hidden md:block" /> Range of Health Concerns
           </h1>
